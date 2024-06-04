@@ -15,7 +15,19 @@
 #### 功能截图
 ![输入图片说明](https://foruda.gitee.com/images/1717491559782222610/487183bb_14502254.jpeg "WechatIMG21.jpg")
 
+#### 安装部署
+- 下载代码导入IDEA等开发工具中
+- 配置文件修改
+      application.yml
+      `iyque:
+         userName: iyque //系统登录账号
+         pwd: 123456 //系统登录密码
 
+      #数据库由于系统内置了H5数据库无需单独安装,username与passwod可自行设置或使用默认的
+      datasource:
+        url: jdbc:h2:file:./data/mydb;
+        username: iyque
+        password: 123456`
 
 
 
