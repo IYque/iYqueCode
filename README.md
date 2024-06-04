@@ -18,8 +18,11 @@
 #### 安装部署
 - 下载代码导入IDEA等开发工具中
 - 配置文件修改
-      application.yml
-      `iyque:
+      
+      `
+     application.yml
+     
+     iyque:
          userName: iyque //系统登录账号
          pwd: 123456 //系统登录密码
 
