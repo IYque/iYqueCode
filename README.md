@@ -24,7 +24,7 @@
 * 更多
     * 后续会不断更新诸如:渠道统计，欢迎语附件，临时活码等相关功能。
 #### 应用演示
-     地址:https://show.iyque.cn/iyque/ 账号:iyque 密码:123456
+     <a href="https://show.iyque.cn/iyque/" target="_blank">演示地址</a> 账号:iyque 密码:123456
 #### 功能截图
 ![输入图片说明](https://foruda.gitee.com/images/1717491559782222610/487183bb_14502254.jpeg "WechatIMG21.jpg")
 #### 安装部署
