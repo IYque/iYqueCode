@@ -18,10 +18,8 @@
 #### 安装部署
 - 下载代码导入IDEA等开发工具中
 - 配置文件修改
-      
-      `
-     application.yml
-     
+      ```yaml
+application.yml
      iyque:
          userName: iyque //系统登录账号
          pwd: 123456 //系统登录密码
@@ -30,7 +28,7 @@
       datasource:
         url: jdbc:h2:file:./data/mydb;
         username: iyque
-        password: 123456`
+        password: 123456
 
 
 
