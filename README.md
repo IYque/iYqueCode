@@ -5,7 +5,7 @@
 #### 特别赞助
 <a href="https://www.iyque.cn" target="_blank">
 <img src="https://iyque-1251309172.cos.ap-nanjing.myqcloud.com/advert/wxjava.jpg" width="100%" height="450"  alt="Image description">
-注：源雀SCRM — 基于SpringCloud+Vue架构,100%开放源码的企微私域营销系统:<a href="https://www.iyque.cn/" target="_blank">https://www.iyque.cn/</a>
+注：源雀SCRM — 基于SpringCloud+Vue架构,100%开放源码的企微私域营销系统
 </a>
 
 #### 软件架构
