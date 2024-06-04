@@ -23,7 +23,7 @@
 
                 <blockquote class="layui-elem-quote">
                     <strong>
-                    源雀SCRM — 基于SpringCloud+Vue架构,100%开放源码的企微私域营销系统:<a href="https://www.iyque.cn/" target="_blank">https://www.iyque.cn/</a>
+                        源雀SCRM — 基于SpringCloud+Vue架构,100%开放源码的企微私域营销系统:<a href="https://www.iyque.cn/" target="_blank">https://www.iyque.cn/</a>
                     </strong>
                 </blockquote>
 
@@ -107,7 +107,7 @@
             <div class="layui-field-box">
 
                 <div class="layui-form-item">
-                    <input  name="id" value="{{d.id ? d.id: ''}}" style="display: none">
+                    <input  type="number" min="1" max="100" name="id" value="{{d.id ? d.id: ''}}" style="display: none">
                     <label class="layui-form-label" >企业Id:</label>
                     <div class="layui-input-block" style="width: 400px;">
                         <input type="text" name="corpId" value="{{d.corpId ? d.corpId : ''}}" required  lay-verify="required" placeholder="请输入corpId"  class="layui-input">
@@ -120,7 +120,7 @@
                     </div>
                 </div>
                 <div class="layui-form-item">
-                      <label class="layui-form-label">应用Secert:</label>
+                    <label class="layui-form-label">应用Secert:</label>
                     <div class="layui-input-block" style="width: 400px;">
                         <input type="password" name="agentSecert" value="{{d.agentSecert ? d.agentSecert : ''}}" autocomplete="off" required lay-verify="required" placeholder="请输入adgentSecert"  class="layui-input">
                     </div>
@@ -178,14 +178,14 @@
 </script>
 
 <script type="text/html" id="tableBar">
-<a class="layui-btn layui-btn-xs" lay-event="edit"><i class="layui-icon">&#xe642;</i>编辑</a>
+    <a class="layui-btn layui-btn-xs" lay-event="edit"><i class="layui-icon">&#xe642;</i>编辑</a>
 </script>
 <style>
-.layui-form-checked[lay-skin=primary] i {
-    border-color: #9553FE;
-    background-color: #9553FE;
-    color: #fff;
-}
+    .layui-form-checked[lay-skin=primary] i {
+        border-color: #9553FE;
+        background-color: #9553FE;
+        color: #fff;
+    }
 </style>
 <script th:inline="javascript">
     /*<![CDATA[*/
@@ -322,30 +322,31 @@
     }
 
     //系统配置存储
-   function saveCorpInfo(form,$){
+    function saveCorpInfo(form,$){
 
-       //监听提交
-       form.on('submit(corpInfoForm)', function(data){
+        //监听提交
+        form.on('submit(corpInfoForm)', function(data){
 
-           console.log(data.field)
-           $.ajax({
-               url: baseUrl+'iYqueConfig/saveOrUpdate', // 替换为你的API地址
-               type: 'POST',
-               data:JSON.stringify(data.field),
-               contentType: 'application/json',
-               success: function(response) {
-                 console.log(response)
-                   // 关闭弹出层
-                   var index = parent.layer.getFrameIndex(window.name); // 获取当前iframe层的索引
-                   parent.layer.close(index); // 关闭当前iframe层
-               },
-               error: function(xhr, textStatus, errorThrown) {
-                   layer.msg('POST请求失败：' + textStatus + ' ' + errorThrown);
-               }
-           });
-           return false;
-       });
-   }
+            console.log(data.field)
+            $.ajax({
+                url: baseUrl+'iYqueConfig/saveOrUpdate', // 替换为你的API地址
+                type: 'POST',
+                data:JSON.stringify(data.field),
+                contentType: 'application/json',
+                success: function(response) {
+                    console.log(response)
+                    layer.msg('更新成功');
+                    // 关闭弹出层
+                    // var index = parent.layer.getFrameIndex(window.name); // 获取当前iframe层的索引
+                    // parent.layer.close(index); // 关闭当前iframe层
+                },
+                error: function(xhr, textStatus, errorThrown) {
+                    layer.msg('POST请求失败：' + textStatus + ' ' + errorThrown);
+                }
+            });
+            return false;
+        });
+    }
 
     //渲染系统配置
     function renderCorp(laytpl,data){
@@ -363,7 +364,7 @@
 
     //渲染默认欢迎语
     function renderDefaultMsg(laytpl,data){
-      // 获取模板
+        // 获取模板
         var tpl = document.getElementById('defaultMsgTpl').innerHTML;
 
         // 渲染模板
@@ -409,7 +410,7 @@
         // 获取textarea的当前值
         var currentValue =  layui.jquery('textarea[name="defaultContent"]').val();
         // 添加新的内容到当前值的后面
-        var newContent = '#客户昵称#'; // 你要添加的新内容
+        var newContent = '$客户昵称$'; // 你要添加的新内容
         layui.jquery('textarea[name="defaultContent"]').val(currentValue + newContent);
 
 
@@ -520,7 +521,7 @@
         var table = layui.table;
         // 获取选中的数据
         var checkStatus = table.checkStatus('demo'); // 请将 'yourTableId' 替换为你的表格ID
-       return  checkStatus.data;
+        return  checkStatus.data;
     }
 
 
