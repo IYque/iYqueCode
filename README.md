@@ -63,6 +63,7 @@
     * Token与AESKey随机生成即可,最后保存，再将回调地址配置企业微信后台
       ![img_7.png](img/img_7.png)
 
-
+#### 感谢
+  <a href="https://gitee.com/binary/weixin-java-tools" target="_blank">开源组件WxJava</a>
 
 
