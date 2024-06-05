@@ -3,11 +3,11 @@
 #### 介绍
 &nbsp;&nbsp;&nbsp;企微活码-iYqueCode是一款基于企业微信开放API开发的活码应用工具。它旨在解决企业微信自带活码功能相对薄弱的问题，为用户提供更强大、更丰富的功能体验。通过iYqueCode，企业可以更加高效地引流获客、提升营销效果，并优化客户服务流程。
 #### 特别赞助
-<a href="https://www.iyque.cn" target="_blank">
+<a href="www.iyque.cn?utm_source=iyquecode&utm_medium=iyquecode&utm_campaign=iyquecode" target="_blank">
 <img src="https://iyque-1251309172.cos.ap-nanjing.myqcloud.com/advert/iyque.jpg" width="50%" height="250"  alt="Image description">
 </a>
 <br/>
-注：源雀SCRM — 基于SpringCloud+Vue架构,100%开放源码的企微私域营销系统:<a href="https://www.iyque.cn/" target="_blank">https://www.iyque.cn/</a>
+注：源雀SCRM — 基于SpringCloud+Vue架构,100%开放源码的企微私域营销系统:<a href="www.iyque.cn?utm_source=iyquecode&utm_medium=iyquecode&utm_campaign=iyquecode" target="_blank">https://www.iyque.cn/</a>
 
 #### 软件架构
 &nbsp;&nbsp;&nbsp;基于Spring Boot框架、Layui前端框架以及内置H2数据库，iYqueCode为企业提供了一套高效、便捷的开箱即用的活码应用解决方案。
